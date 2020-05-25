@@ -562,7 +562,28 @@ exports[`ConfigProvider components BackTop configProvider 1`] = `
     >
       <div
         class="config-back-top-icon"
-      />
+      >
+        <span
+          aria-label="vertical-align-top"
+          class="anticon anticon-vertical-align-top"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            data-icon="vertical-align-top"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M859.9 168H164.1c-4.5 0-8.1 3.6-8.1 8v60c0 4.4 3.6 8 8.1 8h695.8c4.5 0 8.1-3.6 8.1-8v-60c0-4.4-3.6-8-8.1-8zM518.3 355a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V848c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V509.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 355z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -578,7 +599,28 @@ exports[`ConfigProvider components BackTop configProvider componentSize large 1`
     >
       <div
         class="config-back-top-icon"
-      />
+      >
+        <span
+          aria-label="vertical-align-top"
+          class="anticon anticon-vertical-align-top"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            data-icon="vertical-align-top"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M859.9 168H164.1c-4.5 0-8.1 3.6-8.1 8v60c0 4.4 3.6 8 8.1 8h695.8c4.5 0 8.1-3.6 8.1-8v-60c0-4.4-3.6-8-8.1-8zM518.3 355a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V848c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V509.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 355z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -594,7 +636,28 @@ exports[`ConfigProvider components BackTop configProvider componentSize middle 1
     >
       <div
         class="config-back-top-icon"
-      />
+      >
+        <span
+          aria-label="vertical-align-top"
+          class="anticon anticon-vertical-align-top"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            data-icon="vertical-align-top"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M859.9 168H164.1c-4.5 0-8.1 3.6-8.1 8v60c0 4.4 3.6 8 8.1 8h695.8c4.5 0 8.1-3.6 8.1-8v-60c0-4.4-3.6-8-8.1-8zM518.3 355a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V848c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V509.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 355z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -610,7 +673,28 @@ exports[`ConfigProvider components BackTop configProvider virtual and dropdownMa
     >
       <div
         class="ant-back-top-icon"
-      />
+      >
+        <span
+          aria-label="vertical-align-top"
+          class="anticon anticon-vertical-align-top"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            data-icon="vertical-align-top"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M859.9 168H164.1c-4.5 0-8.1 3.6-8.1 8v60c0 4.4 3.6 8 8.1 8h695.8c4.5 0 8.1-3.6 8.1-8v-60c0-4.4-3.6-8-8.1-8zM518.3 355a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V848c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V509.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 355z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -626,7 +710,28 @@ exports[`ConfigProvider components BackTop normal 1`] = `
     >
       <div
         class="ant-back-top-icon"
-      />
+      >
+        <span
+          aria-label="vertical-align-top"
+          class="anticon anticon-vertical-align-top"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            data-icon="vertical-align-top"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M859.9 168H164.1c-4.5 0-8.1 3.6-8.1 8v60c0 4.4 3.6 8 8.1 8h695.8c4.5 0 8.1-3.6 8.1-8v-60c0-4.4-3.6-8-8.1-8zM518.3 355a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V848c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V509.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 355z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -642,7 +747,28 @@ exports[`ConfigProvider components BackTop prefixCls 1`] = `
     >
       <div
         class="prefix-BackTop-icon"
-      />
+      >
+        <span
+          aria-label="vertical-align-top"
+          class="anticon anticon-vertical-align-top"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            data-icon="vertical-align-top"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M859.9 168H164.1c-4.5 0-8.1 3.6-8.1 8v60c0 4.4 3.6 8 8.1 8h695.8c4.5 0 8.1-3.6 8.1-8v-60c0-4.4-3.6-8-8.1-8zM518.3 355a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V848c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V509.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 355z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -18611,7 +18737,11 @@ exports[`ConfigProvider components Popconfirm configProvider 1`] = `
       >
         <div
           class="config-popover-arrow"
-        />
+        >
+          <span
+            class="config-popover-arrow-content"
+          />
+        </div>
         <div
           class="config-popover-inner"
           role="tooltip"
@@ -18691,7 +18821,11 @@ exports[`ConfigProvider components Popconfirm configProvider componentSize large
       >
         <div
           class="config-popover-arrow"
-        />
+        >
+          <span
+            class="config-popover-arrow-content"
+          />
+        </div>
         <div
           class="config-popover-inner"
           role="tooltip"
@@ -18771,7 +18905,11 @@ exports[`ConfigProvider components Popconfirm configProvider componentSize middl
       >
         <div
           class="config-popover-arrow"
-        />
+        >
+          <span
+            class="config-popover-arrow-content"
+          />
+        </div>
         <div
           class="config-popover-inner"
           role="tooltip"
@@ -18851,7 +18989,11 @@ exports[`ConfigProvider components Popconfirm configProvider virtual and dropdow
       >
         <div
           class="ant-popover-arrow"
-        />
+        >
+          <span
+            class="ant-popover-arrow-content"
+          />
+        </div>
         <div
           class="ant-popover-inner"
           role="tooltip"
@@ -18931,7 +19073,11 @@ exports[`ConfigProvider components Popconfirm normal 1`] = `
       >
         <div
           class="ant-popover-arrow"
-        />
+        >
+          <span
+            class="ant-popover-arrow-content"
+          />
+        </div>
         <div
           class="ant-popover-inner"
           role="tooltip"
@@ -19011,7 +19157,11 @@ exports[`ConfigProvider components Popconfirm prefixCls 1`] = `
       >
         <div
           class="prefix-Popconfirm-arrow"
-        />
+        >
+          <span
+            class="prefix-Popconfirm-arrow-content"
+          />
+        </div>
         <div
           class="prefix-Popconfirm-inner"
           role="tooltip"
@@ -19091,7 +19241,11 @@ exports[`ConfigProvider components Popover configProvider 1`] = `
       >
         <div
           class="config-popover-arrow"
-        />
+        >
+          <span
+            class="config-popover-arrow-content"
+          />
+        </div>
         <div
           class="config-popover-inner"
           role="tooltip"
@@ -19123,7 +19277,11 @@ exports[`ConfigProvider components Popover configProvider componentSize large 1`
       >
         <div
           class="config-popover-arrow"
-        />
+        >
+          <span
+            class="config-popover-arrow-content"
+          />
+        </div>
         <div
           class="config-popover-inner"
           role="tooltip"
@@ -19155,7 +19313,11 @@ exports[`ConfigProvider components Popover configProvider componentSize middle 1
       >
         <div
           class="config-popover-arrow"
-        />
+        >
+          <span
+            class="config-popover-arrow-content"
+          />
+        </div>
         <div
           class="config-popover-inner"
           role="tooltip"
@@ -19187,7 +19349,11 @@ exports[`ConfigProvider components Popover configProvider virtual and dropdownMa
       >
         <div
           class="ant-popover-arrow"
-        />
+        >
+          <span
+            class="ant-popover-arrow-content"
+          />
+        </div>
         <div
           class="ant-popover-inner"
           role="tooltip"
@@ -19219,7 +19385,11 @@ exports[`ConfigProvider components Popover normal 1`] = `
       >
         <div
           class="ant-popover-arrow"
-        />
+        >
+          <span
+            class="ant-popover-arrow-content"
+          />
+        </div>
         <div
           class="ant-popover-inner"
           role="tooltip"
@@ -19251,7 +19421,11 @@ exports[`ConfigProvider components Popover prefixCls 1`] = `
       >
         <div
           class="prefix-Popover-arrow"
-        />
+        >
+          <span
+            class="prefix-Popover-arrow-content"
+          />
+        </div>
         <div
           class="prefix-Popover-inner"
           role="tooltip"
@@ -21623,6 +21797,7 @@ exports[`ConfigProvider components Select configProvider 1`] = `
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -21743,6 +21918,7 @@ exports[`ConfigProvider components Select configProvider componentSize large 1`]
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -21863,6 +22039,7 @@ exports[`ConfigProvider components Select configProvider componentSize middle 1`
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -21983,6 +22160,7 @@ exports[`ConfigProvider components Select configProvider virtual and dropdownMat
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -22103,6 +22281,7 @@ exports[`ConfigProvider components Select normal 1`] = `
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -22223,6 +22402,7 @@ exports[`ConfigProvider components Select prefixCls 1`] = `
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -22498,7 +22678,11 @@ exports[`ConfigProvider components Slider configProvider 1`] = `
       >
         <div
           class="config-tooltip-arrow"
-        />
+        >
+          <span
+            class="config-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="config-tooltip-inner"
           role="tooltip"
@@ -22548,7 +22732,11 @@ exports[`ConfigProvider components Slider configProvider componentSize large 1`]
       >
         <div
           class="config-tooltip-arrow"
-        />
+        >
+          <span
+            class="config-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="config-tooltip-inner"
           role="tooltip"
@@ -22598,7 +22786,11 @@ exports[`ConfigProvider components Slider configProvider componentSize middle 1`
       >
         <div
           class="config-tooltip-arrow"
-        />
+        >
+          <span
+            class="config-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="config-tooltip-inner"
           role="tooltip"
@@ -22648,7 +22840,11 @@ exports[`ConfigProvider components Slider configProvider virtual and dropdownMat
       >
         <div
           class="ant-tooltip-arrow"
-        />
+        >
+          <span
+            class="ant-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="ant-tooltip-inner"
           role="tooltip"
@@ -22698,7 +22894,11 @@ exports[`ConfigProvider components Slider normal 1`] = `
       >
         <div
           class="ant-tooltip-arrow"
-        />
+        >
+          <span
+            class="ant-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="ant-tooltip-inner"
           role="tooltip"
@@ -22748,7 +22948,11 @@ exports[`ConfigProvider components Slider prefixCls 1`] = `
       >
         <div
           class="prefix-Slider-tooltip-arrow"
-        />
+        >
+          <span
+            class="prefix-Slider-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="prefix-Slider-tooltip-inner"
           role="tooltip"
@@ -23275,6 +23479,9 @@ exports[`ConfigProvider components Switch configProvider 1`] = `
   role="switch"
   type="button"
 >
+  <div
+    class="config-switch-handle"
+  />
   <span
     class="config-switch-inner"
   />
@@ -23288,6 +23495,9 @@ exports[`ConfigProvider components Switch configProvider componentSize large 1`]
   role="switch"
   type="button"
 >
+  <div
+    class="config-switch-handle"
+  />
   <span
     class="config-switch-inner"
   />
@@ -23301,6 +23511,9 @@ exports[`ConfigProvider components Switch configProvider componentSize middle 1`
   role="switch"
   type="button"
 >
+  <div
+    class="config-switch-handle"
+  />
   <span
     class="config-switch-inner"
   />
@@ -23314,6 +23527,9 @@ exports[`ConfigProvider components Switch configProvider virtual and dropdownMat
   role="switch"
   type="button"
 >
+  <div
+    class="ant-switch-handle"
+  />
   <span
     class="ant-switch-inner"
   />
@@ -23327,6 +23543,9 @@ exports[`ConfigProvider components Switch normal 1`] = `
   role="switch"
   type="button"
 >
+  <div
+    class="ant-switch-handle"
+  />
   <span
     class="ant-switch-inner"
   />
@@ -23340,6 +23559,9 @@ exports[`ConfigProvider components Switch prefixCls 1`] = `
   role="switch"
   type="button"
 >
+  <div
+    class="prefix-Switch-handle"
+  />
   <span
     class="prefix-Switch-inner"
   />
@@ -23357,7 +23579,7 @@ exports[`ConfigProvider components Table configProvider 1`] = `
       class="config-spin-container"
     >
       <div
-        class="config-table"
+        class="config-table config-table-empty"
       >
         <div
           class="config-table-container"
@@ -23631,7 +23853,7 @@ exports[`ConfigProvider components Table configProvider componentSize large 1`] 
       class="config-spin-container"
     >
       <div
-        class="config-table"
+        class="config-table config-table-empty"
       >
         <div
           class="config-table-container"
@@ -23905,7 +24127,7 @@ exports[`ConfigProvider components Table configProvider componentSize middle 1`]
       class="config-spin-container"
     >
       <div
-        class="config-table config-table-middle"
+        class="config-table config-table-middle config-table-empty"
       >
         <div
           class="config-table-container"
@@ -24179,7 +24401,7 @@ exports[`ConfigProvider components Table configProvider virtual and dropdownMatc
       class="ant-spin-container"
     >
       <div
-        class="ant-table"
+        class="ant-table ant-table-empty"
       >
         <div
           class="ant-table-container"
@@ -24453,7 +24675,7 @@ exports[`ConfigProvider components Table normal 1`] = `
       class="ant-spin-container"
     >
       <div
-        class="ant-table"
+        class="ant-table ant-table-empty"
       >
         <div
           class="ant-table-container"
@@ -24727,7 +24949,7 @@ exports[`ConfigProvider components Table prefixCls 1`] = `
       class="ant-spin-container"
     >
       <div
-        class="prefix-Table"
+        class="prefix-Table prefix-Table-empty"
       >
         <div
           class="prefix-Table-container"
@@ -34391,7 +34613,11 @@ Array [
       >
         <div
           class="config-tooltip-arrow"
-        />
+        >
+          <span
+            class="config-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="config-tooltip-inner"
           role="tooltip"
@@ -34421,7 +34647,11 @@ Array [
       >
         <div
           class="config-tooltip-arrow"
-        />
+        >
+          <span
+            class="config-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="config-tooltip-inner"
           role="tooltip"
@@ -34451,7 +34681,11 @@ Array [
       >
         <div
           class="config-tooltip-arrow"
-        />
+        >
+          <span
+            class="config-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="config-tooltip-inner"
           role="tooltip"
@@ -34481,7 +34715,11 @@ Array [
       >
         <div
           class="ant-tooltip-arrow"
-        />
+        >
+          <span
+            class="ant-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="ant-tooltip-inner"
           role="tooltip"
@@ -34511,7 +34749,11 @@ Array [
       >
         <div
           class="ant-tooltip-arrow"
-        />
+        >
+          <span
+            class="ant-tooltip-arrow-content"
+          />
+        </div>
         <div
           class="ant-tooltip-inner"
           role="tooltip"
@@ -34541,7 +34783,11 @@ Array [
       >
         <div
           class="prefix-Tooltip-arrow"
-        />
+        >
+          <span
+            class="prefix-Tooltip-arrow-content"
+          />
+        </div>
         <div
           class="prefix-Tooltip-inner"
           role="tooltip"

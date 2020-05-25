@@ -117,9 +117,16 @@ module.exports = {
 
 According to the [Customize Theme documentation](/docs/react/customize-theme), we need to modify less variables via loader like [less-loader](https://github.com/webpack/less-loader). We can use [craco-less](https://github.com/DocSpring/craco-less) to achieve that,
 
-First we should import less other then css.
+First we should modify `src/App.css` to `src/App.less`, then import less file instead.
 
 ```diff
+/* src/App.js */
+- import './App.css';
++ import './App.less';
+```
+
+```diff
+/* src/App.less */
 - @import '~antd/dist/antd.css';
 + @import '~antd/dist/antd.less';
 ```
@@ -162,4 +169,4 @@ You can also eject your application using [yarn run eject](https://facebook.gith
 
 Finally, we used antd with create-react-app successfully, the source code of this guide was pushed to [create-react-app-antd](https://github.com/ant-design/create-react-app-antd) which you could clone and use it directly.
 
-Next part, We will intruduce how to use antd in [TypeScript](/docs/react/use-in-typescript) and [Umi](/docs/react/practical-projects), let's keep moving!
+Next part, We will introduce how to use antd in [TypeScript](/docs/react/use-in-typescript) and [Umi](/docs/react/practical-projects), let's keep moving!

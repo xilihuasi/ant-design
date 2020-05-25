@@ -3,7 +3,6 @@ import RcCascader from 'rc-cascader';
 import arrayTreeFilter from 'array-tree-filter';
 import classNames from 'classnames';
 import omit from 'omit.js';
-import isEqual from 'lodash/isEqual';
 import KeyCode from 'rc-util/lib/KeyCode';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import DownOutlined from '@ant-design/icons/DownOutlined';
@@ -19,7 +18,7 @@ import SizeContext, { SizeType } from '../config-provider/SizeContext';
 import { replaceElement } from '../_util/reactNode';
 
 export interface CascaderOptionType {
-  value?: string;
+  value?: string | number;
   label?: React.ReactNode;
   disabled?: boolean;
   isLeaf?: boolean;
@@ -29,18 +28,20 @@ export interface CascaderOptionType {
 }
 
 export interface FieldNamesType {
-  value?: string;
+  value?: string | number;
   label?: string;
   children?: string;
 }
 
 export interface FilledFieldNamesType {
-  value: string;
+  value: string | number;
   label: string;
   children: string;
 }
 
 export type CascaderExpandTrigger = 'click' | 'hover';
+
+export type CascaderValueType = (string | number)[];
 
 export interface ShowSearchType {
   filter?: (inputValue: string, path: CascaderOptionType[], names: FilledFieldNamesType) => boolean;
@@ -64,11 +65,11 @@ export interface CascaderProps {
   /** 可选项数据源 */
   options: CascaderOptionType[];
   /** 默认的选中项 */
-  defaultValue?: string[];
+  defaultValue?: CascaderValueType;
   /** 指定选中项 */
-  value?: string[];
+  value?: CascaderValueType;
   /** 选择完成后的回调 */
-  onChange?: (value: string[], selectedOptions?: CascaderOptionType[]) => void;
+  onChange?: (value: CascaderValueType, selectedOptions?: CascaderOptionType[]) => void;
   /** 选择后展示的渲染函数 */
   displayRender?: (label: string[], selectedOptions?: CascaderOptionType[]) => React.ReactNode;
   /** 自定义样式 */
@@ -89,6 +90,8 @@ export interface CascaderProps {
   disabled?: boolean;
   /** 是否支持清除 */
   allowClear?: boolean;
+  /** 自动获取焦点 */
+  autoFocus?: boolean;
   showSearch?: boolean | ShowSearchType;
   notFoundContent?: React.ReactNode;
   loadData?: (selectedOptions?: CascaderOptionType[]) => void;
@@ -110,7 +113,7 @@ export interface CascaderProps {
 export interface CascaderState {
   inputFocused: boolean;
   inputValue: string;
-  value: string[];
+  value: CascaderValueType;
   popupVisible: boolean | undefined;
   flattenOptions: CascaderOptionType[][] | undefined;
   prevProps: CascaderProps;
@@ -264,7 +267,7 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
     };
   }
 
-  setValue = (value: string[], selectedOptions: CascaderOptionType[] = []) => {
+  setValue = (value: CascaderValueType, selectedOptions: CascaderOptionType[] = []) => {
     if (!('value' in this.props)) {
       this.setState({ value });
     }
@@ -329,9 +332,6 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
     // Prevent `Trigger` behaviour.
     if (inputFocused || popupVisible) {
       e.stopPropagation();
-      if (e.nativeEvent.stopImmediatePropagation) {
-        e.nativeEvent.stopImmediatePropagation();
-      }
     }
   };
 
@@ -348,9 +348,10 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
   };
 
   clearSelection = (e: React.MouseEvent<HTMLElement>) => {
+    const { inputValue } = this.state;
     e.preventDefault();
     e.stopPropagation();
-    if (!this.state.inputValue) {
+    if (!inputValue) {
       this.setValue([]);
       this.handlePopupVisibleChange(false);
     } else {
@@ -393,7 +394,7 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
       filtered = flattenOptions.filter(path => filter(this.state.inputValue, path, names));
     }
 
-    filtered.sort((a, b) => sort(a, b, inputValue, names));
+    filtered = filtered.sort((a, b) => sort(a, b, inputValue, names));
 
     if (filtered.length > 0) {
       return filtered.map((path: CascaderOptionType[]) => {
@@ -523,17 +524,13 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
         const names: FilledFieldNamesType = getFilledFieldNames(this.props);
         if (options && options.length > 0) {
           if (state.inputValue) {
-            const filteredOptions = this.generateFilteredOptions(prefixCls, renderEmpty);
-            options = isEqual(filteredOptions, this.cachedOptions)
-              ? this.cachedOptions
-              : filteredOptions;
+            options = this.generateFilteredOptions(prefixCls, renderEmpty);
           }
         } else {
           options = [
             {
               [names.label]: notFoundContent || renderEmpty('Cascader'),
               [names.value]: 'ANT_CASCADER_NOT_FOUND',
-              disabled: true,
             },
           ];
         }
@@ -608,8 +605,10 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
 
         const getPopupContainer = props.getPopupContainer || getContextPopupContainer;
         const rest = omit(props, ['inputIcon', 'expandIcon', 'loadingIcon', 'bordered']);
-        const rcCascaderRtlPopupClassName = classNames(popupClassName, {
+        const rcCascaderPopupClassName = classNames(popupClassName, {
           [`${prefixCls}-menu-${direction}`]: direction === 'rtl',
+          [`${prefixCls}-menu-empty`]:
+            options.length === 1 && options[0].value === 'ANT_CASCADER_NOT_FOUND',
         });
         return (
           <RcCascader
@@ -624,7 +623,7 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
             dropdownMenuColumnStyle={dropdownMenuColumnStyle}
             expandIcon={expandIcon}
             loadingIcon={loadingIcon}
-            popupClassName={rcCascaderRtlPopupClassName}
+            popupClassName={rcCascaderPopupClassName}
             popupPlacement={this.getPopupPlacement(direction)}
           >
             {input}

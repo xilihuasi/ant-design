@@ -62,7 +62,7 @@ English | [Português](./README-pt_BR.md) | [简体中文](./README-zh_CN.md)
 
 ## 🖥 Environment Support
 
-- Modern browsers and Internet Explorer 11 (with [polyfills](https://ant.design/docs/react/getting-started#Compatibility))
+- Modern browsers and Internet Explorer 11 (with [polyfills](https://stackoverflow.com/questions/57020976/polyfills-in-2019-for-ie11))
 - Server-side Rendering
 - [Electron](https://www.electronjs.org/)
 
@@ -88,7 +88,7 @@ import { Button, DatePicker } from 'antd';
 const App = () => (
   <>
     <Button type="primary">PRESS ME</Button>
-    <DatePicker />
+    <DatePicker placeholder="select date" />
   </>
 );
 ```
@@ -101,11 +101,11 @@ import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 ### TypeScript
 
-See [Use in TypeScript](https://ant.design/docs/react/use-in-typescript).
+`antd` is written in TypeScript with complete definitions, check [Use in TypeScript](https://ant.design/docs/react/use-in-typescript) to getting started.
 
 ## 🌍 Internationalization
 
-See [i18n](https://ant.design/docs/react/i18n).
+Dozens of languages supported in `antd`, see [i18n](https://ant.design/docs/react/i18n).
 
 ## 🔗 Links
 
