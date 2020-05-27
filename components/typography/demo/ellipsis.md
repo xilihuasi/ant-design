@@ -14,9 +14,9 @@ title:
 Multiple line ellipsis support.
 
 ```jsx
-import { Typography } from 'antd';
+import { Typography, Row, Col, Tag } from 'antd';
 
-const { Paragraph } = Typography;
+const { Paragraph, Text } = Typography;
 
 ReactDOM.render(
   <div>
@@ -37,6 +37,19 @@ ReactDOM.render(
       language for background applications, is refined by Ant UED Team. Ant Design, a design
       language for background applications, is refined by Ant UED Team.
     </Paragraph>
+
+    <Row>
+      <Col span={6}>
+        <Text ellipsis>
+          Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
+          Design, a design language for background applications, is refined by Ant UED Team. Ant
+          Design, a design language for background applications, is refined by Ant UED Team. Ant
+          Design, a design language for background applications, is refined by Ant UED Team. Ant
+          Design, a design language for background applications, is refined by Ant UED Team. Ant
+          Design, a design language for background applications, is refined by Ant UED Team.
+        </Text>
+      </Col>
+    </Row>
   </div>,
   mountNode,
 );
