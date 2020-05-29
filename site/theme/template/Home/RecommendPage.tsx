@@ -43,23 +43,21 @@ const LIST_EN: Recommend[] = [
     title: 'Ant Experience Technology Department Wants You!',
     description:
       '⚡️ Our vision is ’To Lead Global Experience Technology, to Create First-Class User Experience.‘. Welcome to join us.',
-    img: 'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*BPVATKTgfXwAAAAAAAAAAABkARQnAQ',
+    img: 'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Jd4sQJ9mmaQAAAAAAAAAAABkARQnAQ',
     href: 'https://www.yuque.com/uf44r1/wqrwsg/alwufg',
     popularize: true,
   },
   {
     title: 'Chart Library G2Plot 1.0 has Come!',
-    description: '📈 G2Plot 1.0 supports 40+ types of charts, including built-in statistic & analysis components and complicated interactions. Now it is ready for use out of the box.',
-    img:
-      'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*UsnLRpUZChQAAAAAAAAAAABkARQnAQ',
-    href:
-      'https://zhuanlan.zhihu.com/p/113888415',
+    description:
+      '📈 G2Plot 1.0 supports 40+ types of charts, including built-in statistic & analysis components and complicated interactions. Now it is ready for use out of the box.',
+    img: 'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*UsnLRpUZChQAAAAAAAAAAABkARQnAQ',
+    href: 'https://zhuanlan.zhihu.com/p/113888415',
   },
   {
     title: 'Dark Theme of Ant Design',
     description: '🌃 Let us take a look at how to design the dark theme of Ant Design.',
-    img:
-      'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*pxK_TboMzL8AAAAAAAAAAABkARQnAQ',
+    img: 'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*pxK_TboMzL8AAAAAAAAAAABkARQnAQ',
     href: 'https://zhuanlan.zhihu.com/p/112470365',
   },
 ];

@@ -24,7 +24,7 @@ Uploading is the process of publishing information (web pages, text, pictures, v
 | directory | support upload whole directory ([caniuse](https://caniuse.com/#feat=input-file-directory)) | boolean | false |  |
 | beforeUpload | Hook function which will be executed before uploading. Uploading will be stopped with `false` or a rejected Promise returned. **Warning：this function is not supported in IE9**。 | (file, fileList) => `boolean | Promise` | - |  |
 | customRequest | override for the default xhr behavior allowing for additional customization and ability to implement your own XMLHttpRequest | Function | - |  |
-| data | Uploading extra params or function which can return uploading extra params. | object\|function(file) | - |  |
+| data | Uploading extra params or function which can return uploading extra params. | object\|(file) => `object | Promise<object>` | - |  |
 | defaultFileList | Default list of files that have been uploaded. | object\[] | - |  |
 | disabled | disable upload button | boolean | false |  |
 | fileList | List of files that have been uploaded (controlled). Here is a common issue [#2423](https://github.com/ant-design/ant-design/issues/2423) when using it | object\[] | - |  |
@@ -43,6 +43,7 @@ Uploading is the process of publishing information (web pages, text, pictures, v
 | onDownload | Click the method to download the file, pass the method to perform the method logic, do not pass the default jump to the new TAB. | Function(file): void | Jump to new TAB |  |
 | transformFile   | Customize transform file before request | Function(file): `string | Blob | File | Promise<string | Blob | File>` | - |  |
 | iconRender | custom show icon | (file: UploadFile, listType?: UploadListType) => React.ReactNode | - |  |
+| progress | custom progress bar | [ProgressProps](/components/progress/#API) (support `type="line"` only) | `{ strokeWidth: 2, showInfo: false }` | 4.3.0 |
 
 ### onChange
 
