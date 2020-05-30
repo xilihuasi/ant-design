@@ -7,11 +7,11 @@ title:
 
 ## zh-CN
 
-多行文本省略。
+文本省略。
 
 ## en-US
 
-Multiple line ellipsis support.
+ellipsis support.
 
 ```jsx
 import { Typography, Row, Col, Tag } from 'antd';
